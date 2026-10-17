@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44976991-14ff-48ae-8f6d-810b144de75b" name="Changes" comment="Launching Simplex app onto FastAPI + React -- setup">
-      <change beforePath="$PROJECT_DIR$/backend/core/matplotlibVisualizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/matplotlibVisualizer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/core/simplex_engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/core/simplex_engine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_main.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uv.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,18 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Mijool"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Mijool&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Mijool/SimplexWebProject.git",
-    "accountId": "2e1e4312-4c1a-450e-8491-e6df908a9d04"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Mijool/SimplexWebProject.git&quot;,
+    &quot;accountId&quot;: &quot;2e1e4312-4c1a-450e-8491-e6df908a9d04&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
@@ -51,18 +55,27 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/Mimis/Desktop/SimplexWebProject/frontend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "C:\\Users\\Mimis\\Desktop\\SimplexWebProject\\frontend\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mimis\Desktop\SimplexWebProject\frontend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mimis\Desktop\SimplexWebProject\frontend" />
+      <recent name="C:\Users\Mimis\Desktop\SimplexWebProject" />
+      <recent name="C:\Users\Mimis\Desktop\SimplexWebProject\frontend2" />
       <recent name="C:\Users\Mimis\Desktop\SimplexWebProject\backend" />
     </key>
   </component>
@@ -100,7 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1792173067702</updated>
       <workItem from="1792173068764" duration="259000" />
-      <workItem from="1792173369470" duration="1662000" />
+      <workItem from="1792173369470" duration="3091000" />
+      <workItem from="1792206880561" duration="1583000" />
     </task>
     <task id="LOCAL-00001" summary="Launching Simplex app onto FastAPI + React -- setup">
       <option name="closed" value="true" />
@@ -110,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792174394169</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Launching Simplex app onto FastAPI + React -- setup">
+      <option name="closed" value="true" />
+      <created>1792175181848</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1792175181848</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

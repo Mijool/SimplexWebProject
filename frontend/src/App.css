@@ -1,0 +1,561 @@
+:root {
+
+  --bg: #f8fafc;
+
+  --card-bg: #ffffff;
+
+  --text-main: #0f172a;
+
+  --text-muted: #475569;
+
+  --primary: #2563eb;
+
+  --primary-hover: #1d4ed8;
+
+  --border: #e2e8f0;
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  margin: 0;
+
+  background-color: var(--bg);
+
+  color: var(--text-main);
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+
+    sans-serif;
+
+}
+
+
+
+.app-container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 1.25rem;
+
+}
+
+
+
+.app-header {
+
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+
+}
+
+
+
+.app-header h1 {
+
+  margin: 0 0 0.35rem 0;
+
+  font-size: 1.75rem;
+
+}
+
+
+
+.app-header p {
+
+  margin: 0;
+
+  color: var(--text-muted);
+
+  font-size: 0.95rem;
+
+}
+
+
+
+/* Desktop 2-column layout */
+
+.main-grid {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 1.5rem;
+
+  align-items: start;
+
+}
+
+
+
+.card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 1.25rem;
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+}
+
+
+
+.card h2 {
+
+  margin-top: 0;
+
+  font-size: 1.2rem;
+
+  border-bottom: 1px solid var(--border);
+
+  padding-bottom: 0.6rem;
+
+}
+
+
+
+.config-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1rem;
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+.config-row label {
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-size: 0.875rem;
+
+  font-weight: 600;
+
+  gap: 0.35rem;
+
+  flex: 1;
+
+  min-width: 140px;
+
+}
+
+
+
+.config-row select,
+
+.ineq-select,
+
+.coeff-input {
+
+  padding: 0.5rem;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 6px;
+
+  font-size: 0.95rem;
+
+}
+
+
+
+.radio-group {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.25rem;
+
+  margin-bottom: 1.25rem;
+
+  font-weight: 600;
+
+  font-size: 0.95rem;
+
+}
+
+
+
+.radio-group label {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.35rem;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+}
+
+
+
+.matrix-section h3 {
+
+  font-size: 0.95rem;
+
+  color: var(--text-muted);
+
+  margin-bottom: 0.5rem;
+
+}
+
+
+
+.constraints-list {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.6rem;
+
+}
+
+
+
+.equation-row {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.45rem;
+
+  overflow-x: auto;
+
+  padding-bottom: 0.25rem;
+
+}
+
+
+
+.eq-label {
+
+  font-weight: 600;
+
+  white-space: nowrap;
+
+}
+
+
+
+.coeff-input {
+
+  width: 68px;
+
+  text-align: center;
+
+}
+
+
+
+.rhs-input {
+
+  width: 78px;
+
+}
+
+
+
+.var-label {
+
+  white-space: nowrap;
+
+  font-weight: 500;
+
+}
+
+
+
+.action-buttons {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 0.75rem;
+
+  margin-top: 1.25rem;
+
+}
+
+
+
+.btn {
+
+  padding: 0.65rem 1rem;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  border: none;
+
+  font-size: 0.95rem;
+
+  flex: 1;
+
+  min-width: 120px;
+
+}
+
+
+
+.btn-primary {
+
+  background: var(--primary);
+
+  color: white;
+
+}
+
+
+
+.btn-primary:hover {
+
+  background: var(--primary-hover);
+
+}
+
+
+
+.btn-secondary {
+
+  background: #e2e8f0;
+
+  color: #1e293b;
+
+}
+
+
+
+.btn-outline {
+
+  background: transparent;
+
+  border: 1px solid #cbd5e1;
+
+  color: #334155;
+
+}
+
+
+
+.error-banner {
+
+  margin-top: 1rem;
+
+  padding: 0.75rem;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+
+  color: #b91c1c;
+
+  border-radius: 8px;
+
+  font-size: 0.9rem;
+
+}
+
+
+
+.status-badge {
+
+  display: inline-block;
+
+  padding: 0.4rem 0.85rem;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  font-size: 0.875rem;
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+.status-ok {
+
+  background: #dcfce7;
+
+  color: #166534;
+
+}
+
+
+
+.status-warn {
+
+  background: #fef3c7;
+
+  color: #92400e;
+
+}
+
+
+
+.metrics-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+  gap: 0.75rem;
+
+  margin-bottom: 1rem;
+
+}
+
+
+
+.metric-box {
+
+  background: #f8fafc;
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+
+  padding: 0.75rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.25rem;
+
+}
+
+
+
+.metric-label {
+
+  font-size: 0.75rem;
+
+  text-transform: uppercase;
+
+  color: var(--text-muted);
+
+  font-weight: 600;
+
+}
+
+
+
+.metric-value {
+
+  font-size: 1.05rem;
+
+  font-weight: 700;
+
+}
+
+
+
+.plot-container {
+
+  text-align: center;
+
+  margin-top: 0.5rem;
+
+}
+
+
+
+.feasible-plot {
+
+  max-width: 100%;
+
+  height: auto;
+
+  border-radius: 8px;
+
+  border: 1px solid var(--border);
+
+}
+
+
+
+.no-plot-notice,
+
+.empty-state {
+
+  padding: 2rem 1rem;
+
+  text-align: center;
+
+  color: var(--text-muted);
+
+  background: #f8fafc;
+
+  border-radius: 8px;
+
+  border: 1px dashed #cbd5e1;
+
+}
+
+
+
+/* Mobile & Tablet Responsive Breakpoint */
+
+@media (max-width: 860px) {
+
+  .main-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+
+  .app-container {
+
+    padding: 0.75rem;
+
+  }
+
+
+
+  .coeff-input {
+
+    width: 60px;
+
+  }
+
+}

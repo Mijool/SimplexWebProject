@@ -190,7 +190,7 @@ class SimplexSolver:
             else:
                 eta[i] = -1*(A_star[i])/A_star[leaving_row_index]
 
-        E: np.ndarray = np.eye(self._num_constraints, dtype=float) #create an identity matrix in the shape of our constaints
+        E: np.ndarray = np.eye(self._num_constraints, dtype=float) #create an identity matrix in the shape of our constraints
         E[:, leaving_row_index] = eta #[select all rows, select the column that aligns with the row that is leaving] = eta vector
 
         S_star = E @ self.B_inv
