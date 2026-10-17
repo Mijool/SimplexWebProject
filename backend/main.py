@@ -11,8 +11,8 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from core.matplotlibVisualizer import plot_feasible_region
-from core.simplex_engine import SimplexSolver
+from backend.core.matplotlibVisualizer import plot_feasible_region
+from backend.core.simplex_engine import SimplexSolver
 app = FastAPI()
 
 
